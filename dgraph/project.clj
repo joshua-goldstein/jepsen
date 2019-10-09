@@ -15,7 +15,7 @@
                  [io.dgraph/dgraph4j "2.0.2"
                   :exclusions [io.grpc/grpc-core
                                io.netty/netty-codec-http2]]
-                 [io.grpc/grpc-core "1.22.1"]
+                 [io.grpc/grpc-core "1.10.0"]
                  [io.netty/netty-codec-http2 "4.1.16.Final"]
                  [clj-wallhack "1.0.1"]
                  [io.opencensus/opencensus-api  "0.18.0"]
