@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Oct 09 17:59:00 PDT 2019
+dgraph4j-1.7.2.jar>=
+dgraph4j-1.7.2.pom>=
