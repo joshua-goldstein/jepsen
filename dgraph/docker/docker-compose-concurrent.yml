@@ -1,0 +1,731 @@
+# Configuration to run enough worker nodes to run all Dgraph tests
+# concurrently at once.
+version: '3.7'
+x-node:
+  &default-node
+  image: jepsen_worker
+  env_file: ./secret/node.env
+  privileged: true
+  networks:
+    - jepsen
+services:
+  n1:
+    << : *default-node
+    container_name: jepsen-n1
+    hostname: n1
+  n2:
+    << : *default-node
+    container_name: jepsen-n2
+    hostname: n2
+  n3:
+    << : *default-node
+    container_name: jepsen-n3
+    hostname: n3
+  n4:
+    << : *default-node
+    container_name: jepsen-n4
+    hostname: n4
+  n5:
+    << : *default-node
+    container_name: jepsen-n5
+    hostname: n5
+  n6:
+    << : *default-node
+    container_name: jepsen-n6
+    hostname: n6
+  n7:
+    << : *default-node
+    container_name: jepsen-n7
+    hostname: n7
+  n8:
+    << : *default-node
+    container_name: jepsen-n8
+    hostname: n8
+  n9:
+    << : *default-node
+    container_name: jepsen-n9
+    hostname: n9
+  n10:
+    << : *default-node
+    container_name: jepsen-n10
+    hostname: n10
+  n11:
+    << : *default-node
+    container_name: jepsen-n11
+    hostname: n11
+  n12:
+    << : *default-node
+    container_name: jepsen-n12
+    hostname: n12
+  n13:
+    << : *default-node
+    container_name: jepsen-n13
+    hostname: n13
+  n14:
+    << : *default-node
+    container_name: jepsen-n14
+    hostname: n14
+  n15:
+    << : *default-node
+    container_name: jepsen-n15
+    hostname: n15
+  n16:
+    << : *default-node
+    container_name: jepsen-n16
+    hostname: n16
+  n17:
+    << : *default-node
+    container_name: jepsen-n17
+    hostname: n17
+  n18:
+    << : *default-node
+    container_name: jepsen-n18
+    hostname: n18
+  n19:
+    << : *default-node
+    container_name: jepsen-n19
+    hostname: n19
+  n20:
+    << : *default-node
+    container_name: jepsen-n20
+    hostname: n20
+  n21:
+    << : *default-node
+    container_name: jepsen-n21
+    hostname: n21
+  n22:
+    << : *default-node
+    container_name: jepsen-n22
+    hostname: n22
+  n23:
+    << : *default-node
+    container_name: jepsen-n23
+    hostname: n23
+  n24:
+    << : *default-node
+    container_name: jepsen-n24
+    hostname: n24
+  n25:
+    << : *default-node
+    container_name: jepsen-n25
+    hostname: n25
+  n26:
+    << : *default-node
+    container_name: jepsen-n26
+    hostname: n26
+  n27:
+    << : *default-node
+    container_name: jepsen-n27
+    hostname: n27
+  n28:
+    << : *default-node
+    container_name: jepsen-n28
+    hostname: n28
+  n29:
+    << : *default-node
+    container_name: jepsen-n29
+    hostname: n29
+  n30:
+    << : *default-node
+    container_name: jepsen-n30
+    hostname: n30
+  n31:
+    << : *default-node
+    container_name: jepsen-n31
+    hostname: n31
+  n32:
+    << : *default-node
+    container_name: jepsen-n32
+    hostname: n32
+  n33:
+    << : *default-node
+    container_name: jepsen-n33
+    hostname: n33
+  n34:
+    << : *default-node
+    container_name: jepsen-n34
+    hostname: n34
+  n35:
+    << : *default-node
+    container_name: jepsen-n35
+    hostname: n35
+  n36:
+    << : *default-node
+    container_name: jepsen-n36
+    hostname: n36
+  n37:
+    << : *default-node
+    container_name: jepsen-n37
+    hostname: n37
+  n38:
+    << : *default-node
+    container_name: jepsen-n38
+    hostname: n38
+  n39:
+    << : *default-node
+    container_name: jepsen-n39
+    hostname: n39
+  n40:
+    << : *default-node
+    container_name: jepsen-n40
+    hostname: n40
+  n41:
+    << : *default-node
+    container_name: jepsen-n41
+    hostname: n41
+  n42:
+    << : *default-node
+    container_name: jepsen-n42
+    hostname: n42
+  n43:
+    << : *default-node
+    container_name: jepsen-n43
+    hostname: n43
+  n44:
+    << : *default-node
+    container_name: jepsen-n44
+    hostname: n44
+  n45:
+    << : *default-node
+    container_name: jepsen-n45
+    hostname: n45
+  n46:
+    << : *default-node
+    container_name: jepsen-n46
+    hostname: n46
+  n47:
+    << : *default-node
+    container_name: jepsen-n47
+    hostname: n47
+  n48:
+    << : *default-node
+    container_name: jepsen-n48
+    hostname: n48
+  n49:
+    << : *default-node
+    container_name: jepsen-n49
+    hostname: n49
+  n50:
+    << : *default-node
+    container_name: jepsen-n50
+    hostname: n50
+  n51:
+    << : *default-node
+    container_name: jepsen-n51
+    hostname: n51
+  n52:
+    << : *default-node
+    container_name: jepsen-n52
+    hostname: n52
+  n53:
+    << : *default-node
+    container_name: jepsen-n53
+    hostname: n53
+  n54:
+    << : *default-node
+    container_name: jepsen-n54
+    hostname: n54
+  n55:
+    << : *default-node
+    container_name: jepsen-n55
+    hostname: n55
+  n56:
+    << : *default-node
+    container_name: jepsen-n56
+    hostname: n56
+  n57:
+    << : *default-node
+    container_name: jepsen-n57
+    hostname: n57
+  n58:
+    << : *default-node
+    container_name: jepsen-n58
+    hostname: n58
+  n59:
+    << : *default-node
+    container_name: jepsen-n59
+    hostname: n59
+  n60:
+    << : *default-node
+    container_name: jepsen-n60
+    hostname: n60
+  n61:
+    << : *default-node
+    container_name: jepsen-n61
+    hostname: n61
+  n62:
+    << : *default-node
+    container_name: jepsen-n62
+    hostname: n62
+  n63:
+    << : *default-node
+    container_name: jepsen-n63
+    hostname: n63
+  n64:
+    << : *default-node
+    container_name: jepsen-n64
+    hostname: n64
+  n65:
+    << : *default-node
+    container_name: jepsen-n65
+    hostname: n65
+  n66:
+    << : *default-node
+    container_name: jepsen-n66
+    hostname: n66
+  n67:
+    << : *default-node
+    container_name: jepsen-n67
+    hostname: n67
+  n68:
+    << : *default-node
+    container_name: jepsen-n68
+    hostname: n68
+  n69:
+    << : *default-node
+    container_name: jepsen-n69
+    hostname: n69
+  n70:
+    << : *default-node
+    container_name: jepsen-n70
+    hostname: n70
+  n71:
+    << : *default-node
+    container_name: jepsen-n71
+    hostname: n71
+  n72:
+    << : *default-node
+    container_name: jepsen-n72
+    hostname: n72
+  n73:
+    << : *default-node
+    container_name: jepsen-n73
+    hostname: n73
+  n74:
+    << : *default-node
+    container_name: jepsen-n74
+    hostname: n74
+  n75:
+    << : *default-node
+    container_name: jepsen-n75
+    hostname: n75
+  n76:
+    << : *default-node
+    container_name: jepsen-n76
+    hostname: n76
+  n77:
+    << : *default-node
+    container_name: jepsen-n77
+    hostname: n77
+  n78:
+    << : *default-node
+    container_name: jepsen-n78
+    hostname: n78
+  n79:
+    << : *default-node
+    container_name: jepsen-n79
+    hostname: n79
+  n80:
+    << : *default-node
+    container_name: jepsen-n80
+    hostname: n80
+  n81:
+    << : *default-node
+    container_name: jepsen-n81
+    hostname: n81
+  n82:
+    << : *default-node
+    container_name: jepsen-n82
+    hostname: n82
+  n83:
+    << : *default-node
+    container_name: jepsen-n83
+    hostname: n83
+  n84:
+    << : *default-node
+    container_name: jepsen-n84
+    hostname: n84
+  n85:
+    << : *default-node
+    container_name: jepsen-n85
+    hostname: n85
+  n86:
+    << : *default-node
+    container_name: jepsen-n86
+    hostname: n86
+  n87:
+    << : *default-node
+    container_name: jepsen-n87
+    hostname: n87
+  n88:
+    << : *default-node
+    container_name: jepsen-n88
+    hostname: n88
+  n89:
+    << : *default-node
+    container_name: jepsen-n89
+    hostname: n89
+  n90:
+    << : *default-node
+    container_name: jepsen-n90
+    hostname: n90
+  n91:
+    << : *default-node
+    container_name: jepsen-n91
+    hostname: n91
+  n92:
+    << : *default-node
+    container_name: jepsen-n92
+    hostname: n92
+  n93:
+    << : *default-node
+    container_name: jepsen-n93
+    hostname: n93
+  n94:
+    << : *default-node
+    container_name: jepsen-n94
+    hostname: n94
+  n95:
+    << : *default-node
+    container_name: jepsen-n95
+    hostname: n95
+  n96:
+    << : *default-node
+    container_name: jepsen-n96
+    hostname: n96
+  n97:
+    << : *default-node
+    container_name: jepsen-n97
+    hostname: n97
+  n98:
+    << : *default-node
+    container_name: jepsen-n98
+    hostname: n98
+  n99:
+    << : *default-node
+    container_name: jepsen-n99
+    hostname: n99
+  n100:
+    << : *default-node
+    container_name: jepsen-n100
+    hostname: n100
+  n101:
+    << : *default-node
+    container_name: jepsen-n101
+    hostname: n101
+  n102:
+    << : *default-node
+    container_name: jepsen-n102
+    hostname: n102
+  n103:
+    << : *default-node
+    container_name: jepsen-n103
+    hostname: n103
+  n104:
+    << : *default-node
+    container_name: jepsen-n104
+    hostname: n104
+  n105:
+    << : *default-node
+    container_name: jepsen-n105
+    hostname: n105
+  n106:
+    << : *default-node
+    container_name: jepsen-n106
+    hostname: n106
+  n107:
+    << : *default-node
+    container_name: jepsen-n107
+    hostname: n107
+  n108:
+    << : *default-node
+    container_name: jepsen-n108
+    hostname: n108
+  n109:
+    << : *default-node
+    container_name: jepsen-n109
+    hostname: n109
+  n110:
+    << : *default-node
+    container_name: jepsen-n110
+    hostname: n110
+  n111:
+    << : *default-node
+    container_name: jepsen-n111
+    hostname: n111
+  n112:
+    << : *default-node
+    container_name: jepsen-n112
+    hostname: n112
+  n113:
+    << : *default-node
+    container_name: jepsen-n113
+    hostname: n113
+  n114:
+    << : *default-node
+    container_name: jepsen-n114
+    hostname: n114
+  n115:
+    << : *default-node
+    container_name: jepsen-n115
+    hostname: n115
+  n116:
+    << : *default-node
+    container_name: jepsen-n116
+    hostname: n116
+  n117:
+    << : *default-node
+    container_name: jepsen-n117
+    hostname: n117
+  n118:
+    << : *default-node
+    container_name: jepsen-n118
+    hostname: n118
+  n119:
+    << : *default-node
+    container_name: jepsen-n119
+    hostname: n119
+  n120:
+    << : *default-node
+    container_name: jepsen-n120
+    hostname: n120
+  n121:
+    << : *default-node
+    container_name: jepsen-n121
+    hostname: n121
+  n122:
+    << : *default-node
+    container_name: jepsen-n122
+    hostname: n122
+  n123:
+    << : *default-node
+    container_name: jepsen-n123
+    hostname: n123
+  n124:
+    << : *default-node
+    container_name: jepsen-n124
+    hostname: n124
+  n125:
+    << : *default-node
+    container_name: jepsen-n125
+    hostname: n125
+  n126:
+    << : *default-node
+    container_name: jepsen-n126
+    hostname: n126
+  n127:
+    << : *default-node
+    container_name: jepsen-n127
+    hostname: n127
+  n128:
+    << : *default-node
+    container_name: jepsen-n128
+    hostname: n128
+  n129:
+    << : *default-node
+    container_name: jepsen-n129
+    hostname: n129
+  n130:
+    << : *default-node
+    container_name: jepsen-n130
+    hostname: n130
+  n131:
+    << : *default-node
+    container_name: jepsen-n131
+    hostname: n131
+  n132:
+    << : *default-node
+    container_name: jepsen-n132
+    hostname: n132
+  n133:
+    << : *default-node
+    container_name: jepsen-n133
+    hostname: n133
+  n134:
+    << : *default-node
+    container_name: jepsen-n134
+    hostname: n134
+  n135:
+    << : *default-node
+    container_name: jepsen-n135
+    hostname: n135
+  n136:
+    << : *default-node
+    container_name: jepsen-n136
+    hostname: n136
+  n137:
+    << : *default-node
+    container_name: jepsen-n137
+    hostname: n137
+  n138:
+    << : *default-node
+    container_name: jepsen-n138
+    hostname: n138
+  n139:
+    << : *default-node
+    container_name: jepsen-n139
+    hostname: n139
+  n140:
+    << : *default-node
+    container_name: jepsen-n140
+    hostname: n140
+  n141:
+    << : *default-node
+    container_name: jepsen-n141
+    hostname: n141
+  n142:
+    << : *default-node
+    container_name: jepsen-n142
+    hostname: n142
+  n143:
+    << : *default-node
+    container_name: jepsen-n143
+    hostname: n143
+  n144:
+    << : *default-node
+    container_name: jepsen-n144
+    hostname: n144
+  n145:
+    << : *default-node
+    container_name: jepsen-n145
+    hostname: n145
+  n146:
+    << : *default-node
+    container_name: jepsen-n146
+    hostname: n146
+  n147:
+    << : *default-node
+    container_name: jepsen-n147
+    hostname: n147
+  n148:
+    << : *default-node
+    container_name: jepsen-n148
+    hostname: n148
+  n149:
+    << : *default-node
+    container_name: jepsen-n149
+    hostname: n149
+  n150:
+    << : *default-node
+    container_name: jepsen-n150
+    hostname: n150
+  n151:
+    << : *default-node
+    container_name: jepsen-n151
+    hostname: n151
+  n152:
+    << : *default-node
+    container_name: jepsen-n152
+    hostname: n152
+  n153:
+    << : *default-node
+    container_name: jepsen-n153
+    hostname: n153
+  n154:
+    << : *default-node
+    container_name: jepsen-n154
+    hostname: n154
+  n155:
+    << : *default-node
+    container_name: jepsen-n155
+    hostname: n155
+  n156:
+    << : *default-node
+    container_name: jepsen-n156
+    hostname: n156
+  n157:
+    << : *default-node
+    container_name: jepsen-n157
+    hostname: n157
+  n158:
+    << : *default-node
+    container_name: jepsen-n158
+    hostname: n158
+  n159:
+    << : *default-node
+    container_name: jepsen-n159
+    hostname: n159
+  n160:
+    << : *default-node
+    container_name: jepsen-n160
+    hostname: n160
+  n161:
+    << : *default-node
+    container_name: jepsen-n161
+    hostname: n161
+  n162:
+    << : *default-node
+    container_name: jepsen-n162
+    hostname: n162
+  n163:
+    << : *default-node
+    container_name: jepsen-n163
+    hostname: n163
+  n164:
+    << : *default-node
+    container_name: jepsen-n164
+    hostname: n164
+  n165:
+    << : *default-node
+    container_name: jepsen-n165
+    hostname: n165
+  n166:
+    << : *default-node
+    container_name: jepsen-n166
+    hostname: n166
+  n167:
+    << : *default-node
+    container_name: jepsen-n167
+    hostname: n167
+  n168:
+    << : *default-node
+    container_name: jepsen-n168
+    hostname: n168
+  n169:
+    << : *default-node
+    container_name: jepsen-n169
+    hostname: n169
+  n170:
+    << : *default-node
+    container_name: jepsen-n170
+    hostname: n170
+  n171:
+    << : *default-node
+    container_name: jepsen-n171
+    hostname: n171
+  n172:
+    << : *default-node
+    container_name: jepsen-n172
+    hostname: n172
+  n173:
+    << : *default-node
+    container_name: jepsen-n173
+    hostname: n173
+  n174:
+    << : *default-node
+    container_name: jepsen-n174
+    hostname: n174
+  n175:
+    << : *default-node
+    container_name: jepsen-n175
+    hostname: n175
+  n176:
+    << : *default-node
+    container_name: jepsen-n176
+    hostname: n176
+  n177:
+    << : *default-node
+    container_name: jepsen-n177
+    hostname: n177
+  n178:
+    << : *default-node
+    container_name: jepsen-n178
+    hostname: n178
+  n179:
+    << : *default-node
+    container_name: jepsen-n179
+    hostname: n179
+  n180:
+    << : *default-node
+    container_name: jepsen-n180
+    hostname: n180
