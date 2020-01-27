@@ -111,6 +111,7 @@
             [:--jaeger.agent (:dgraph-jaeger-agent test)])
           :--idx        (node-idx test node)
           :--my         (str node ":" alpha-internal-port)
+          :--snapshot_after 1000
           :--zero       (str node ":" zero-internal-port)))
   :started)
 
