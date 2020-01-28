@@ -22,7 +22,7 @@ services:
       - BADGER_EPHEMERAL=false
       - BADGER_DIRECTORY_KEY=/working/jaeger
       - BADGER_DIRECTORY_VALUE=/working/jaeger
-      - BADGER_SPAN_STORE_TTL=0
+      - BADGER_SPAN_STORE_TTL=87600h
   grafana:
     networks:
       - jepsen
