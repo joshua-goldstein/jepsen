@@ -13,10 +13,6 @@ services:
       - "16686:16686" # UI
       - "14268:14268" # Collector
       - "14269:14269" # Admin endpoint for metrics & pprof
-    volumes:
-      - type: bind
-        source: .
-        target: /working
     environment:
       - SPAN_STORAGE_TYPE=badger
       - BADGER_EPHEMERAL=false
